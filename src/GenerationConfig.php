@@ -21,7 +21,9 @@ class GenerationConfig implements JsonSerializable
      *     topK?: int,
      * }
      */
-    private array $config;
+    private array $config = [
+        'response_mime_type' => 'application/json'
+    ];
 
     public function withCandidateCount(int $candidateCount): self
     {
